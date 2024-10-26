@@ -1,0 +1,281 @@
+
+:root{
+    --side-bar-color: rgb(5, 156, 243);
+    --side-bar-text-color: white;
+    --main-content-bg-color: rgb(219, 216, 216);
+    --projects-margin-size: 25px;
+
+
+}
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body {
+    /* Height and width fallback for older browsers. */
+    height: 100%;
+    width: 100%;
+
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+
+    /* Remove any browser-default margins. */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+
+.container .sidebar{
+    background-color: var(--side-bar-color);
+    width: 350px; 
+}
+
+
+.sidebar h1{
+    color: var(--side-bar-text-color);
+    text-align: start;
+    margin-left: 30px;
+}
+.sidebar .dashboard-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+.dashboard-container .dashboard-image {
+    width: 3rem;
+    height: 3rem;
+    
+}
+
+.dashboard-container .dashboard-text {
+    font-size: 24px;
+    font-weight: bolder;
+    padding-left: 20px;
+
+}
+
+.container .main-content{
+    background-color: var(--main-content-bg-color);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.main-content > div {
+    display: flex;
+}
+
+.icons {
+    align-items: center;
+    gap: 20px;
+}
+
+.icons .dashboard-image {
+    width: 3rem;
+    height: 3rem;
+}
+
+.search-area > div {
+    display: flex;
+    min-height: 100px;
+    margin: 10px;
+}
+.search-area .search-bar {
+    align-items: center;
+    gap: 30px;
+}
+
+.search-area .search-bar #search-bar {
+    background-color: var(--main-content-bg-color);
+    border: none;
+    border-radius: 10px;
+    min-height: 40px;
+    min-width: 600px;
+}
+
+
+.search-area {
+justify-content: space-between;
+}
+
+.welcome-header > div {
+    display: flex;
+}
+
+.welcome-header {
+    justify-content: space-between;
+}
+
+.welcome-header .welcome-message {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 1fr);
+}
+
+#welcome-text {
+    grid-column: 2;
+}
+
+#admin-name {
+    grid-column: 2;
+
+}
+.welcome-buttons {
+    gap: 30px;
+    align-items: center;
+    margin-right: var(--projects-margin-size);
+}
+
+button[type="button"] {
+    background-color: var(--side-bar-color);
+    color: white;
+    width: 110px;
+    border-radius: 20px;
+    border: none;
+    height: 50px;
+    width: 100px;
+
+    
+}
+li {
+    list-style-type: none;
+}
+
+.sidebar > div {
+    display: flex;
+}
+
+.main-content .search-area, .main-content .welcome-header {
+    background-color: white;
+}
+
+
+
+
+.container .projects {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 4fr 1.3fr;
+    margin: var(--projects-margin-size);
+}
+.your-projects {
+    grid-column: 1;
+}
+.your-projects .project-cards {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2, minmax(400px, 50%));
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card .card-text {
+    margin: 30px;
+}
+
+.card .card-images {
+    display: flex;
+    justify-content:flex-end;
+    margin: 10px;
+    gap: 20px;
+}
+
+
+.card-images .card-image {
+    width: 2rem;
+    height: 2rem;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0 0.2);
+}
+
+.right-side-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: var(--projects-margin-size);
+}
+
+
+.announcements {
+    grid-column: 2;
+}
+
+.announcements .announcement-cards {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) ;
+    background-color: white;
+    border-radius: 5px; ;
+}
+
+
+.announcement-cards > div {
+    margin: 10px;
+}
+
+.announcement-cards .announcement-text {
+    margin: 10px;
+}
+
+.trending {
+    grid-column: 2;
+}
+
+.trending-cards > div {
+    margin: 10px;
+}
+
+.trending .trending-cards {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) ;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.trending-cards .trending-card {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.trending-card .trending-card-image {
+    width: 4rem;
+    height: 4rem;
+}
+
+li p{
+    text-align:start;
+    color: var(--side-bar-text-color)
+}
+
+
+
+
+
