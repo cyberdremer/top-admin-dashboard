@@ -1,38 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David's Admin Dashboard</title>
     <link rel="stylesheet" href="styles/dashboard.css">
 </head>
+
 <body>
     <div class="container">
         <div class="sidebar">
-
+            <h1>Dashboard</h1>
+            <div class="account-dashboard">
+                <ul>
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/home-account.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>Home</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/id-card.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>Profile</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/message-reply.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>Messages</p>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/clock-outline.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>History</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/file-tree.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>Tasks</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/message-reply.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>Communities</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="account-help">
+                <ul >
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/cog.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>Settings</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/help-box.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>Support</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dashboard-container">
+                            <div class="dashboard-image">
+                                <img src="svgs/shield-lock.svg" alt="">
+                            </div>
+                            <div class="dashboard-text">
+                                <p>Privacy</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="main-content">
             <div class="search-area">
+                <div class="search-bar">
+                    <img src="svgs/search-24px.png" alt="">
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search....">
 
+                </div>
+                <div class="icons">
+                    <div class="dashboard-image"><img src="svgs/bell.svg" alt=""></div>
+                    <div class="dashboard-image">
+                        <img src="svgs/header/cat.svg" alt="">
+                    </div>
+                    <p>David Lara</p>
+
+
+                </div>
             </div>
             <div class="welcome-header">
+                <div class="welcome-message">
+                    <img src="" alt="">
+                    <span id="welcome-text">
+                        <p>Hi, There</p>
+                    </span>
+                    <span id="admin-name">
+                        <p>David Lara</p>
+                    </span>
+
+                </div>
+                <div class="welcome-buttons">
+                    <button type="button">
+                        New
+                    </button>
+                    <button type="button">
+                        Upload
+                    </button>
+                    <button type="button">
+                        Share
+                    </button>
+                </div>
 
             </div>
             <div class="projects">
                 <div class="your-projects">
                     <h2>Your projects</h2>
+                    <div class="project-cards">
+                        <div class="card">
+                            <div class="card-text">
+                                <h2>Super Cool Project</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit neque dolorem fuga? Alias, voluptas ipsum debitis ea iusto esse accusamus odio explicabo ut quasi eos est. Vel, magnam maiores.
+                                </p>
+                            </div>
+                            <div class="card-images">
+                                <div class="card-image"><img src="svgs/project-cards/eye-plus-outline.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/star-plus.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/map-marker-path.svg" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-text">
+                                <h2>Less Cool Project</h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nulla dicta architecto sunt, modi reiciendis nisi quam impedit adipisci magnam in veritatis, ipsam quidem optio, cupiditate ipsa ut velit? Aspernatur.
+                                </p>
+                            </div>
+                            <div class="card-images">
+                                <div class="card-image"><img src="svgs/project-cards/eye-plus-outline.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/star-plus.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/map-marker-path.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-text">
+                                <h2>Impossible App</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quaerat maiores adipisci necessitatibus magnam laudantium nesciunt ullam eaque mollitia eum a perspiciatis numquam aperiam itaque iure maxime odio ipsa sapiente.
+                                </p>
+                            </div>
+                            <div class="card-images">
+                                <div class="card-image"><img src="svgs/project-cards/eye-plus-outline.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/star-plus.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/map-marker-path.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-text">
+                                <h2>Easy Peasy App</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ratione et eius minima, impedit officiis numquam laborum temporibus doloremque iure. Magni voluptatum, sapiente culpa asperiores impedit autem ut quisquam excepturi?
+                                </p>
+                            </div>
+                            <div class="card-images">
+                                <div class="card-image"><img src="svgs/project-cards/eye-plus-outline.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/star-plus.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/map-marker-path.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-text">
+                                <h2>Ad Blocker</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quae repudiandae nisi doloremque hic ipsa, numquam adipisci odio nobis quas, odit dolore aliquam ullam, dolores velit neque quod expedita molestiae!
+                                </p>
+                            </div>
+                            <div class="card-images">
+                                <div class="card-image"><img src="svgs/project-cards/eye-plus-outline.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/star-plus.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/map-marker-path.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-text">
+                                <h2>The Money Maker</h2>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nobis explicabo earum velit dolores, aliquam veniam sequi, voluptate vel unde cumque magnam aperiam sapiente, delectus ea veritatis? Facere, impedit? Fuga?
+                                </p>
+                            </div>
+                            <div class="card-images">
+                                <div class="card-image"><img src="svgs/project-cards/eye-plus-outline.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/star-plus.svg" alt=""></div>
+                                <div class="card-image"><img src="svgs/project-cards/map-marker-path.svg" alt=""></div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-                <div class="announcements">
-                    <h2>Announcements</h2>
-
-                </div>
-                <div class="trending">
-                    <h2>trending</h2>
-
+                <div class="right-side-content">
+                    <div class="announcements">
+                        <h2>Announcements</h2>
+                        <div class="announcement-cards">
+                            <div class="announcement">
+                                <h3>Site Maintenence</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, velit ullam ipsum enim, impedit illum, possimus quo incidunt voluptatibus modi perferendis inventore magni quaerat laudantium mollitia ea? Debitis, optio consequatur?
+                                </p>
+                            </div>
+                            <div class="announcement">
+                                <h3>Community Share Day</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur quae eligendi voluptates ex fuga eos ratione et, qui illum voluptatem corrupti dicta, minus optio repellendus. Explicabo, culpa! Ducimus, maxime.
+                                </p>
+                            </div>
+                            <div class="announcement">
+                                <h3>Updated Privacy Policy</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia dicta dignissimos, rerum eos repellendus facere distinctio laboriosam ducimus ex incidunt est commodi nam magnam nulla possimus harum doloribus aliquam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <h2>Trending</h2>
+                        <div class="trending-cards">
+                            <div class="trending-card">
+                                <div class="trending-card-image">
+                                    <img src="svgs/account.svg" alt="">
+                                </div>
+                                <div class="trending-card-text">
+                                    <p>Username</p>
+                                    <p>bio</p>
+                                </div>
+                            </div>
+                            <div class="trending-card">
+                                <div class="trending-card-image">
+                                    <img src="svgs/account.svg" alt="">
+                                </div>
+                                <div class="trending-card-text">
+                                    <p>Username</p>
+                                    <p>bio</p>
+                                </div>
+                            </div>
+                            <div class="trending-card">
+                                <div class="trending-card-image">
+                                    <img src="svgs/account.svg" alt="">
+                                </div>
+                                <div class="trending-card-text">
+                                    <p>Username</p>
+                                    <p>bio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
