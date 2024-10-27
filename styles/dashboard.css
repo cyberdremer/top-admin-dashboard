@@ -1,5 +1,4 @@
-
-:root{
+:root {
     --side-bar-color: rgb(5, 156, 243);
     --side-bar-text-color: white;
     --main-content-bg-color: rgb(219, 216, 216);
@@ -9,10 +8,12 @@
 }
 
 
-body{
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-html, body {
+
+html,
+body {
     /* Height and width fallback for older browsers. */
     height: 100%;
     width: 100%;
@@ -40,17 +41,18 @@ h1 {
     margin-bottom: 0;
 }
 
-.container .sidebar{
+.container .sidebar {
     background-color: var(--side-bar-color);
-    width: 350px; 
+    width: 350px;
 }
 
 
-.sidebar h1{
+.sidebar h1 {
     color: var(--side-bar-text-color);
     text-align: start;
     margin-left: 30px;
 }
+
 .sidebar .dashboard-container {
     display: flex;
     align-items: center;
@@ -62,7 +64,7 @@ h1 {
 .dashboard-container .dashboard-image {
     width: 3rem;
     height: 3rem;
-    
+
 }
 
 .dashboard-container .dashboard-text {
@@ -72,14 +74,14 @@ h1 {
 
 }
 
-.container .main-content{
+.container .main-content {
     background-color: var(--main-content-bg-color);
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
-.main-content > div {
+.main-content>div {
     display: flex;
 }
 
@@ -93,11 +95,12 @@ h1 {
     height: 3rem;
 }
 
-.search-area > div {
+.search-area>div {
     display: flex;
     min-height: 100px;
     margin: 10px;
 }
+
 .search-area .search-bar {
     align-items: center;
     gap: 30px;
@@ -113,20 +116,32 @@ h1 {
 
 
 .search-area {
-justify-content: space-between;
+    justify-content: space-between;
 }
 
-.welcome-header > div {
+.welcome-header>div {
     display: flex;
 }
 
 .welcome-header {
     justify-content: space-between;
+    box-shadow: 0 4px 8px -4px rgb(0,0,0, 0.2);
 }
 
 .welcome-header .welcome-message {
     display: grid;
     grid-template-columns: repeat(2, 1fr 1fr);
+}
+
+.welcome-message-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.welcome-message .dashboard-image {
+    display: flex;
+    align-items: center;
 }
 
 #welcome-text {
@@ -137,6 +152,7 @@ justify-content: space-between;
     grid-column: 2;
 
 }
+
 .welcome-buttons {
     gap: 30px;
     align-items: center;
@@ -148,23 +164,29 @@ button[type="button"] {
     color: white;
     width: 110px;
     border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
     border: none;
-    height: 50px;
-    width: 100px;
+    height: 60px;
+    width: 200px;
 
-    
+
 }
+
 li {
     list-style-type: none;
 }
 
-.sidebar > div {
+.sidebar>div {
     display: flex;
 }
 
-.main-content .search-area, .main-content .welcome-header {
+.main-content .search-area,
+.main-content .welcome-header {
     background-color: white;
 }
+
+
 
 
 
@@ -175,9 +197,11 @@ li {
     grid-template-columns: 4fr 1.3fr;
     margin: var(--projects-margin-size);
 }
+
 .your-projects {
     grid-column: 1;
 }
+
 .your-projects .project-cards {
     display: grid;
     gap: 2em;
@@ -194,13 +218,21 @@ li {
 
 }
 
+.card .card-text h2 {
+    font-size: 40px;
+}
+
+.card .card-text p {
+    font-size: 21px;
+}
+
 .card .card-text {
     margin: 30px;
 }
 
 .card .card-images {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     margin: 10px;
     gap: 20px;
 }
@@ -212,7 +244,7 @@ li {
 
 }
 
-.card:hover {
+.project.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0 0.2);
 }
 
@@ -229,14 +261,20 @@ li {
 
 .announcements .announcement-cards {
     display: grid;
-    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
     background-color: white;
-    border-radius: 5px; ;
+    border-radius: 5px;
+    ;
 }
 
 
-.announcement-cards > div {
+.announcement-cards>div {
     margin: 10px;
+}
+
+.announcement-cards .announcement p {
+    font-size: 20px;
+
 }
 
 .announcement-cards .announcement-text {
@@ -247,13 +285,17 @@ li {
     grid-column: 2;
 }
 
-.trending-cards > div {
+.trending-cards>div {
     margin: 10px;
+}
+
+.trending-card .trending-card-text {
+    font-size: 15px;
 }
 
 .trending .trending-cards {
     display: grid;
-    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
     background-color: white;
     border-radius: 5px;
 }
@@ -270,12 +312,16 @@ li {
     height: 4rem;
 }
 
-li p{
-    text-align:start;
+li p {
+    text-align: start;
     color: var(--side-bar-text-color)
 }
 
 
+#welcome-text p {
+    font-size: 20px;
+}
 
-
-
+#admin-name p {
+    font-size: 25px;
+}
